@@ -9,13 +9,10 @@ module.exports = (req,res,next) => {
         decodedToken = jwt.verify(token,"secret")
         //console.log(decodedToken)
     }catch(err){
-        err.statusCode=500;
-        throw err
+        return res.status(401).json({message:"User unauthenticated!!"})
     }
     if(!decodedToken){
-        const error = new error("User unauthenticated");
-        error.statusCode=401;
-        throw error
+        return res.status(401).json({message:"User unauthenticated!!"})
     }
     req.userID=decodedToken._id;
     next()

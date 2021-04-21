@@ -8,7 +8,7 @@ const route = express.Router()
 route.get("/",isAuth,patientController.getPatients)
 route.get("/stats",isAuth,patientController.getStats)
 route.post("/login",isAuth,patientController.login)
-route.post("/register",patientController.registerPatient)
+route.post("/register",isAuth,patientController.registerPatient)
 route.post("/edit/:id",isAuth,patientController.editPatient)
 
 module.exports = route;

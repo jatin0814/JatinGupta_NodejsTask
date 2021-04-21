@@ -6,6 +6,10 @@ const route = express.Router()
 
 
 route.post("/login",psychiatristController.login)
-route.post("/register",psychiatristController.regPsychiatrist)
+
+route.post("/register",body("firstname").isLength({max:20}),
+body("lastname").isLength({max:20}),
+psychiatristController.regPsychiatrist
+)
 
 module.exports = route;
