@@ -45,7 +45,7 @@ Using it for Multer to store **uploaded files directly to MongoDb**.
 	POST /resgister 		{ Psychiatrist Register }
 ````
 
-####**Deploy to Heroku**
+#### Deploy on Heroku
 - First create an app on heroku and install heroku CLI.
 - Change directory to your current project directory
 - Open terminal and run  `heroku login` and follow the prompts to create a new SSH public key.
