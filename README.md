@@ -33,16 +33,16 @@ Using it for Multer to store **uploaded files directly to MongoDb**.
 
 - #### End Points 
 ```
-	- **For Patients**
-``` GET   /patient```     ( Fetching all the patients in an order for a single psychiatrist )
- ``` GET    /patient/stats``` { Fetch the count of how many patients are registered for each psychiatrist in a hospital. This should return, hospital name, psychiatrist name, patients count. }
-``` POST /patient/login``` {  Patient Login }
-``` POST /patient/register``` { Register Patients }
-``` POST``` /patient/edit/:id { Edit existing Patient}
+	- <!--For Patients-->
+	GET   /patient    		{ Fetching all the patients in an order for a single psychiatrist }
+	GET  /patient/stats 	{ Fetch the count of how many patients are registered for each psychiatrist in a hospital. This should return, hospital name, psychiatrist name, patients count. }
+	POST /patient/login 	{  Patient Login }
+	POST /patient/register 	{ Register Patients }
+	POST /patient/edit/:id 	{ Edit existing Patient}
 
-	- **For Psychiatrist**
-``` POST  /login ``` { Psychiatrist Login }
-``` POST /resgister``` { Psychiatrist Register }
+	- <!--For Psychiatrist-->
+	POST  /login  			{ Psychiatrist Login }
+	POST /resgister 		{ Psychiatrist Register }
 ````
 
 ####**Deploy to Heroku**
