@@ -32,6 +32,7 @@ Using it for Multer to store **uploaded files directly to MongoDb**.
 - Now run `npm start` it starts local server ( by default on port 3000)
 
 - #### End Points 
+```
 	- **For Patients**
 ``` GET   /patient```     ( Fetching all the patients in an order for a single psychiatrist )
  ``` GET    /patient/stats``` { Fetch the count of how many patients are registered for each psychiatrist in a hospital. This should return, hospital name, psychiatrist name, patients count. }
@@ -42,7 +43,7 @@ Using it for Multer to store **uploaded files directly to MongoDb**.
 	- **For Psychiatrist**
 ``` POST  /login ``` { Psychiatrist Login }
 ``` POST /resgister``` { Psychiatrist Register }
-
+````
 
 ####**Deploy to Heroku**
 - First create an app on heroku and install heroku CLI.
