@@ -14,11 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
-var g = require('dyson-generators');
-    var imageData;
-    g.image.base64({width:200, height: 200}).then(image=>{
-        imageData = image
-    })
+
 const mongoDbUrl = process.env.MONGODBURL;
 
 app.use((req, res, next) => {
